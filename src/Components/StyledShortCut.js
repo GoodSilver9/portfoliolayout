@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyledShortCut = styled.ul`
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5em;
   background-color: #f7f7f7;
   padding-bottom: 0.5em;
