@@ -45,7 +45,7 @@ const StyledSkills = styled.div`
 
 const Skills = () => {
   return (
-    <StyledPageComponent>
+    <StyledPageComponent id="skills">
       <AboutTitle>WEB FRONTEND SKILLS</AboutTitle>
       <StyledSkills>
         {webSkillData.map((data) => {

@@ -4,7 +4,7 @@ import { StyledTitle } from "./StyledTitle";
 
 const Title = () => {
   return (
-    <StyledTitle>
+    <StyledTitle id="about">
       <img src={logoIcon} alt="logo" className="logo" />
       <h1 className="name">SeungMu</h1>
       <p className="description">많은 가능성, 더 나은 결과물</p>

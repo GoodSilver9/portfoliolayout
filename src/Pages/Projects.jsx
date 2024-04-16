@@ -5,7 +5,7 @@ import ProjectCard from "../Components/Card/ProjectCard";
 
 const Projects = () => {
   return (
-    <StyledPageComponent>
+    <StyledPageComponent id="projects">
       <AboutTitle>MAIN PROJECT</AboutTitle>
       <ProjectCard />
     </StyledPageComponent>

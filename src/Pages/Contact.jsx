@@ -19,7 +19,7 @@ const StyledContact = styled.div`
 const Contact = () => {
   return (
     <StyledPageComponent>
-      <StyledContact>
+      <StyledContact id="contact">
         <AboutTitle>Contact</AboutTitle>
         <div className="contact">
           <dl>

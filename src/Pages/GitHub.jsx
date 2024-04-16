@@ -19,7 +19,7 @@ const StyledGithub = styled.div`
 const GitHub = () => {
   return (
     <StyledPageComponent>
-      <StyledGithub>
+      <StyledGithub id="github">
         <AboutTitle>GitHub 및 기타</AboutTitle>
         <p>
           저의 깃허브 리포지터리,제가 프로그래밍을 하면서 올린 깃허브 작업물들
