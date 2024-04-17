@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledTitle = styled.div`
   color: #636363;
-  padding: 7em 5em 4em 5em;
+  margin: 64px 0;
 
   .logo {
     padding-bottom: 28px;

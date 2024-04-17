@@ -4,16 +4,21 @@ import fitbuddy from "../../Asset/img/FitBuddy.PNG";
 const StyledProjectCard = styled.div`
   display: flex;
   gap: 30px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: center;
 
-  .freeView {
-    width: 450px;
-    height: 320px;
+  .preview-img {
+    min-width: 300px;
+    width: 100%;
+    max-width: 700px;
   }
+
   .container {
     display: flex;
     flex-direction: column;
+    padding: 0 32px;
   }
+
   .container_title {
     display: flex;
     flex-direction: column;
@@ -22,6 +27,7 @@ const StyledProjectCard = styled.div`
       margin-bottom: 45px;
     }
   }
+
   .container_LinkButtons {
     display: flex;
     justify-content: center;
@@ -31,7 +37,10 @@ const StyledProjectCard = styled.div`
       text-decoration: none;
       color: inherit;
       cursor: pointer;
-      padding: 25px 100px;
+
+      flex-grow: 1;
+
+      padding: 25px;
       border-radius: 8px;
     }
     .demo {
@@ -62,9 +71,7 @@ const StyledProjectCard = styled.div`
 const ProjectCard = () => {
   return (
     <StyledProjectCard>
-      <div>
-        <img src={fitbuddy} alt="fitbuddy" className="freeView" />
-      </div>
+      <img src={fitbuddy} alt="fitbuddy" className="preview-img" />
       <div className="container">
         <div className="container_title">
           <h2>핏버디(팀 프로젝트)</h2>

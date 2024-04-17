@@ -5,7 +5,9 @@ const StyledAhefButton = styled.a`
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  padding: 20px 80px;
+  flex-grow: 1;
+  padding: 20px 0px;
+  /* padding: 20px 80px; */
   border-radius: 8px;
   background-color: #8cc9f0;
   color: #fff;

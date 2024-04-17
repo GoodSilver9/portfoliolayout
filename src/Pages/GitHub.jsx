@@ -8,6 +8,7 @@ const StyledGithub = styled.div`
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding: 0 32px;
   }
   p {
     font-size: 24px;

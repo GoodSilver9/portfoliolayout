@@ -69,19 +69,19 @@ const ShortCut = () => {
       contact={contact}
     >
       <li className="shortCutBtn">
-        <a onClick={scrollToAbout}>About</a>
+        <span onClick={scrollToAbout}>About</span>
       </li>
       <li className="shortCutBtn">
-        <a onClick={scrollToSkills}>스킬</a>
+        <span onClick={scrollToSkills}>스킬</span>
       </li>
       <li className="shortCutBtn">
-        <a onClick={scrollToProjects}>프로젝트</a>
+        <span onClick={scrollToProjects}>프로젝트</span>
       </li>
       <li className="shortCutBtn">
-        <a onClick={scrollToGitHub}>깃허브 및 기타</a>
+        <span onClick={scrollToGitHub}>깃허브 및 기타</span>
       </li>
       <li className="shortCutBtn">
-        <a onClick={scrollToContact}>CONTACT</a>
+        <span onClick={scrollToContact}>CONTACT</span>
       </li>
     </StyledShortCut>
   );

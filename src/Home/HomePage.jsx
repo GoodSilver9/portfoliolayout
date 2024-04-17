@@ -8,6 +8,7 @@ import Projects from "../Pages/Projects";
 import GitHub from "../Pages/GitHub";
 import Contact from "../Pages/Contact";
 
+// 모바일 기기 대응은 360px 은 최소 대응해야 함
 const HomePage = () => {
   return (
     <StyledHomePage>

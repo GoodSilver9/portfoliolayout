@@ -49,13 +49,13 @@ const Skills = () => {
       <AboutTitle>WEB FRONTEND SKILLS</AboutTitle>
       <StyledSkills>
         {webSkillData.map((data) => {
-          return <SkillList data={data} />;
+          return <SkillList key={data.title} data={data} />;
         })}
       </StyledSkills>
       <AboutTitle>ETC</AboutTitle>
       <StyledSkills>
         {eTC.map((data) => {
-          return <SkillList data={data} />;
+          return <SkillList key={data} data={data} />;
         })}
       </StyledSkills>
     </StyledPageComponent>

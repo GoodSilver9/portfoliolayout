@@ -6,15 +6,13 @@ export const StyledShortCut = styled.ul`
   flex-wrap: wrap;
   gap: 1.5em;
   background-color: #f7f7f7;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
+  padding: 8px 0;
   list-style: none;
   margin: 0;
   position: ${({ active }) => (active ? "fixed" : "static")};
   width: ${({ active }) => (active ? "100%" : "")};
   top: 0;
-  left: 50%;
-  transform: ${({ active }) => (active ? "translate(-50%, 0)" : "")};
+  left: 0;
   & li:nth-child(1) {
     background-color: ${({ about }) => (about ? "#fff" : "#f7f7f7")};
   }

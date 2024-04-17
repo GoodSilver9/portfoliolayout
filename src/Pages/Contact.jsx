@@ -14,6 +14,11 @@ const StyledContact = styled.div`
     align-items: center;
     gap: 30px;
   }
+
+  dd {
+    padding: 0;
+    margin: 0;
+  }
 `;
 
 const Contact = () => {
@@ -25,7 +30,7 @@ const Contact = () => {
           <dl>
             <dt>Email</dt>
             <dd>
-              <a>dltmdan12@gmail.com</a>
+              <a href="https://dltmdan12@gmail.com">dltmdan12@gmail.com</a>
             </dd>
           </dl>
         </div>
