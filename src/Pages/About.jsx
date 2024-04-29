@@ -1,13 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import profileImg from "../Asset/img/conyImages.png";
+import profileImg from "../Asset/img/profile.jpg";
 import { StyledPageComponent } from "../Components/StyledPageComponent";
 
 const StyledAbout = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  gap: 50px;
 
   .aboutIntro {
-    .intro {
+    display: inline-block;
+    max-width: 500px;
+    /* margin-right: 150px; */
+
+    /* .intro {
       display: flex;
       flex-direction: column;
       margin-right: auto;
@@ -15,14 +23,21 @@ const StyledAbout = styled.div`
       h1 {
         display: inline-block;
       }
-    }
+    } */
   }
   .about_img {
-    width: 256px;
-    height: 256px;
-    overflow: hidden;
-    object-fit: contain;
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 100%;
+    padding: 10px;
+    max-width: 276px;
+    max-height: 206px;
+
     img {
+      max-width: 200px;
+      border-radius: 100%;
+      object-fit: contain;
+      float: right;
     }
   }
 `;
