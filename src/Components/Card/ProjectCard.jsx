@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import fitbuddy from "../../Asset/img/FitBuddy.PNG";
 
 const StyledProjectCard = styled.div`
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 60px;
 
   .preview-img {
     min-width: 300px;
@@ -17,13 +17,21 @@ const StyledProjectCard = styled.div`
     display: flex;
     flex-direction: column;
     padding: 0 32px;
+    width: 100%;
   }
 
   .container_title {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+    }
     p {
+      font-size: 18px;
+      font-weight: 300;
       margin-bottom: 45px;
     }
   }
@@ -32,7 +40,6 @@ const StyledProjectCard = styled.div`
     display: flex;
     justify-content: center;
     gap: 30px;
-
     a {
       text-decoration: none;
       color: inherit;
@@ -68,37 +75,30 @@ const StyledProjectCard = styled.div`
   }
 `;
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
+  const data = props.data;
+  const skills = data.skills.split(",");
+
   return (
     <StyledProjectCard>
-      <img src={fitbuddy} alt="fitbuddy" className="preview-img" />
+      <img src={data.prewview} alt="prewview" className="preview-img" />
       <div className="container">
         <div className="container_title">
-          <h2>핏버디(팀 프로젝트)</h2>
-          <p>
-            '핏버디'는 운동에 대한 열정을 공유하고, 함께 땀 흘리며 건강한 생활을
-            이어갈 친구들을 만날 수 있는 운동 커뮤니티입니다.
-          </p>
+          <h2>{data.title}</h2>
+          <p>{data.info}</p>
         </div>
         <div className="container_LinkButtons">
-          <a
-            href="https://main--spiffy-kleicha-22273b.netlify.app/"
-            className="demo"
-          >
+          <a href={data.demo} className="demo">
             DEMO
           </a>
-          <a
-            href="https://github.com/FRONTENDSCHOOL7/final-21-FitBuddy?tab=readme-ov-file"
-            className="detail"
-          >
+          <a href={data.github} className="detail">
             GitHub
           </a>
         </div>
         <ul className="skills">
-          <li>React.js</li>
-          <li>Recoil</li>
-          <li>Firebase</li>
-          <li>Node.js</li>
+          {skills.map((item) => {
+            return <li>{item}</li>;
+          })}
         </ul>
       </div>
     </StyledProjectCard>

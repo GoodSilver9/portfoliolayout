@@ -4,20 +4,27 @@ import { StyledPageComponent } from "../Components/StyledPageComponent";
 import { AboutTitle } from "../Components/AboutTitle";
 
 const StyledContact = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    gap: 15px;
   }
-  .contact_item {
+  .contact_info {
     display: flex;
-    align-items: center;
-    gap: 30px;
-  }
+    flex-wrap: wrap;
+    gap: 40px;
+    font-weight: 400;
 
-  dd {
-    padding: 0;
-    margin: 0;
+    & :nth-child(2) {
+      color: #636363;
+      font-weight: 300;
+      text-decoration: underline 1px #636363;
+      text-underline-position: under;
+    }
   }
 `;
 
@@ -27,13 +34,16 @@ const Contact = () => {
       <StyledContact id="contact">
         <AboutTitle>Contact</AboutTitle>
         <div className="contact">
-          <dl>
-            <dt>Email</dt>
-            <dd>
-              <a href="https://dltmdan12@gmail.com">dltmdan12@gmail.com</a>
-            </dd>
-          </dl>
+          <div className="contact_info">
+            <div>Email</div>
+            <div>dltmdan12@gmail.com</div>
+          </div>
+          <div className="contact_info">
+            <div>Phone</div>
+            <div>010-5100-5138</div>
+          </div>
         </div>
+        <div></div>
       </StyledContact>
     </StyledPageComponent>
   );

@@ -12,7 +12,7 @@ const ShortCut = () => {
   document.addEventListener("scroll", function () {
     let scrollY = window.scrollY;
 
-    if (scrollY > 520) {
+    if (scrollY > 432) {
       setActive(true);
       setSkills(false);
       setAbout(true);
@@ -22,17 +22,17 @@ const ShortCut = () => {
       setProjects(false);
       setGitHub(false);
     }
-    if (scrollY > 865) {
+    if (scrollY > 750) {
       setAbout(false);
       setSkills(true);
       setProjects(false);
     }
-    if (scrollY > 2140) {
+    if (scrollY > 1895) {
       setSkills(false);
       setProjects(true);
       setGitHub(false);
     }
-    if (scrollY > 2650) {
+    if (scrollY > 3370) {
       setSkills(false);
       setProjects(false);
       setGitHub(true);

@@ -7,6 +7,7 @@ export const StyledShortCut = styled.ul`
   gap: 1.5em;
   background-color: #f7f7f7;
   padding: 8px 0;
+  z-index: 1;
   list-style: none;
   margin: 0;
   position: ${({ active }) => (active ? "fixed" : "static")};

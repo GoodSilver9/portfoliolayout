@@ -4,10 +4,12 @@ import { AboutTitle } from "../Components/AboutTitle";
 import AhefButton from "../Components/Button/AhefButton";
 
 const StyledGithub = styled.div`
+  padding-top: 70px;
+
   .container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3s0px;
     padding: 0 32px;
   }
   p {

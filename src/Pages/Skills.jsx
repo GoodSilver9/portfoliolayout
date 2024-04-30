@@ -36,7 +36,7 @@ const StyledSkills = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 130px;
-  padding-bottom: 150px;
+  padding-bottom: 80px;
 
   li {
     list-style: none;
