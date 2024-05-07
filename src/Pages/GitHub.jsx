@@ -9,7 +9,7 @@ const StyledGithub = styled.div`
   .container {
     display: flex;
     justify-content: center;
-    gap: 3s0px;
+    gap: 30px;
     padding: 0 32px;
   }
   p {

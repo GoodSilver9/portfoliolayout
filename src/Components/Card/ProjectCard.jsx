@@ -96,8 +96,8 @@ const ProjectCard = (props) => {
           </a>
         </div>
         <ul className="skills">
-          {skills.map((item) => {
-            return <li>{item}</li>;
+          {skills.map((item, idx) => {
+            return <li key={idx}>{item}</li>;
           })}
         </ul>
       </div>
