@@ -12,6 +12,7 @@ const StyledContact = styled.div`
     flex-direction: column;
     align-items: start;
     gap: 15px;
+    padding-bottom: 600px;
   }
   .contact_info {
     display: flex;
@@ -43,7 +44,6 @@ const Contact = () => {
             <div>010-5100-5138</div>
           </div>
         </div>
-        <div></div>
       </StyledContact>
     </StyledPageComponent>
   );

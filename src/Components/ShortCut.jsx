@@ -37,6 +37,12 @@ const ShortCut = () => {
       setProjects(false);
       setGitHub(true);
     }
+    if (scrollY > 4000) {
+      setContact(true);
+      setGitHub(false);
+    } else {
+      setContact(false);
+    }
   });
 
   const scrollToAbout = () => {
